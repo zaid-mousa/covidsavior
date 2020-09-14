@@ -1,0 +1,159 @@
+html,body{
+	
+	margin: 0;
+	padding:0;
+	background-image: url("background.svg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	}
+
+
+.navbar-default { /* background color of navbar */
+    background: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle { /* hamburger border */
+    border-color: transparent;
+    outline: none;
+}
+
+#bs-example-navbar-collapse-1 .navbar-nav li a{ /* navbar buttons */
+	color:#01adff;
+	transition: 0.4s;
+}
+#bs-example-navbar-collapse-1 .navbar-nav li a:hover,#bs-example-navbar-collapse-1 .navbar-nav li a:focus,.white:hover{ /* navbar buttons */
+	color:#0066cf;
+	font-size: 22px;
+}
+
+
+.navbar-nav > li > a { /* navbar buttons  */
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 18px;
+    line-height: 20px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { /* navbar Home button background edit */
+    background-color: transparent;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+
+#main {
+  width: 500px;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  right:15%;
+}
+.navbar-default .navbar-brand { /* brand color*/
+    color:#062D55;
+    transition: 0.4s;
+}
+
+.white{   /* brand ' Savior ' color */
+	color:#0066CF;
+}
+
+
+
+.navbar-default .navbar-brand:hover {
+    color: #000;
+}
+
+#main p{
+    width:500px;
+    text-align: center;
+    margin:auto;
+
+}
+.innerdiv{
+    width: fit-content;
+    color: #00336D;
+}
+ 
+ #main button{
+     border-radius: 100px;
+     padding:3px 20px;
+     position: absolute;
+     top: 80%;
+     right:0%;
+     margin-top: 3%;
+ }
+
+ #main h1{text-align:center;}
+
+.navbar-default .navbar-toggle .icon-bar { /* hamburger icons */
+    background-color: #fffffff5;
+}
+
+
+@media screen and (max-width:1200px){
+#main {
+  width: 500px;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 12%;
+  right:7%;
+}
+
+
+}
+@media screen and (max-width:930px){
+#main {
+  width: 500px;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:7%;
+  right:3%;
+}
+
+@media screen and (max-width:768px){
+.navbar-default { /* background color of navbar */ 
+    background: rgba(0,0,0,0.5);
+    border-color: transparent;
+}
+.navbar-default .navbar-brand { /* brand color*/
+    color:#fff;
+}
+
+.white{   /* brand ' Savior ' color */
+	color:#fff;
+}
+
+#bs-example-navbar-collapse-1 .navbar-nav li a{ /* navbar buttons */
+	color:#fff;
+}
+
+#main {
+  width: 500px;
+  height: 40vh;
+  display: flex;
+  color:red;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5%;
+  right:5%;
+}
+.innerdiv{
+    color: #000;
+}
+
+}
+
+
+
