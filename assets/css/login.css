@@ -5,16 +5,23 @@ body {
 }
 
 .loginBox{
+	/*
 	width:400px;
-	height: fit-content;
-	color:#000;
 	top: 50%;
 	left: 50%;
-	padding-top: 50px;
 	position: absolute;
-	transform: translate(-50%,-50%); 
+	transform: translate(-50%,-50%);
+	
+	
+	*/
+	height: fit-content;
+	color:#000;
+	
+	padding-top: 50px;
+	 
 	text-align: center;
 	box-shadow: 5px 5px 40px rgb(150,150,150);
+	*/
 }
 
 
@@ -22,33 +29,35 @@ body {
 	border:0;
 	background: none;
 	display: block;
-	margin: 20px auto;
+	margin: 15px auto;
 	text-align: center;
-	border:2px solid #827ffe;
+	border:1px solid #b6b4f9;
 	width:250px;
 	padding:14px 10px;
 	outline: none;
 	color: #403866;
-	border-radius: 24px;
+	border-radius: 18px;
 	background-color:transparent;
 	transition: 0.4s; 
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 17px;
 }	
-h1 {
-	font-size:200%;
-	font-weight: 20em;
+h2 {
+	font-size:100%;
+	font-weight: 15em;
 	text-transform: uppercase;
-
+	text-align: left;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 
 .loginBox button{
 	border:0;
 	background: none;
 	display: block;
-	margin: 20px auto;
+	margin: 15px auto;
 	text-align: center;
-	border:2px solid #827ffe;
+	border:1px solid #827ffe;
 	width:100px;
 	padding:14px 10px;
 	outline: none;
@@ -70,18 +79,20 @@ h1 {
 }
 
 
-.loginBox input[type="text"]:hover,.loginBox input[type="password"]:hover{
-width: 300px;
-padding:20px;
-border:2px solid #002db3;
-font-size: 20px;
-
+.loginBox input[type="text"]:hover,.loginBox input[type="password"]:hover
+{
+	width: 300px;
+	padding:20px;
+	border:1px solid #002db3;
+	font-size: 20px;
 }
-.loginBox input[type="text"]:focus,.loginBox input[type="password"]:focus{
-width: 300px;
-padding:20px;
-border:2px solid #002db3;
-font-size: 17px;
+
+.loginBox input[type="text"]:focus,.loginBox input[type="password"]:focus
+{
+	width: 300px;
+	padding:20px;
+	border:1px solid #002db3;
+	font-size: 17px;
 }
 
 p {
