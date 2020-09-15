@@ -1,22 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity=     "sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-       <link rel="stylesheet" href="/assets/css/main.css" >
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Home</title>
-  </head>
-  <body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <%- include('partials/nav'); -%>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Home</title>
+</head>
 
-       <div class="videoSection">
+<body>
+
+  <%- include('partials/nav'); -%>
+  
+      <div class="videoSection">
               <div class="container-fluid">
                        <div class="row">
                                <div class="col-sm text-center">
@@ -41,7 +46,8 @@
 
                 </div>
 
-       </div>  </div>
+       </div>
+      </div>
 
      <div class="container-fluid phoneSize">
      	<div class="row">
@@ -76,59 +82,75 @@
 
     <div class="col-md-12 col-sm-12" class="outterFram">
        <!-- <iframe class="fram"src="https://www.worldometers.info/coronavirus/" width="100%"  title="Iframe Example"></iframe>
- -->    </div>
+ -->
+  </div>
 
 
   </div>
-</div>
+  </div> -->
 
 
-<div class="imgSection" style="margin-top:80px">
-	 <div class="container-fluid text-center ">
-        	<div class="row">
-                <div class=" col-sm-12">
-                       <div class="ImgContainer">
-                              <video  width="100%" height="100%"  autoplay muted loop>
-                                       <source src="assets\images\Background-35208.mp4"type="video/mp4">
+  <div class="imgSection" style="margin-top:80px">
+    <div class="container-fluid text-center ">
+      <div class="row">
+        <div class=" col-sm-12">
+          <div class="ImgContainer">
+            <video width="100%" height="100%" autoplay muted loop>
+              <source src="assets\images\Background-35208.mp4" type="video/mp4">
 
-                               </video>
-                               <div id="overlay">
-                               				  <p >As a live update, COVID-19, previously known as the novel Coronavirus, has killed more than <strong><%= data['deaths'] %></strong> people and infected over 1,805,159 people in 144 countries. (Pettersson et al., 2020) This number is continuing to grow every day. In the United States, the COVID has been spreading rapidly. Currently, all 50 states have declared an emergency over the spread of Coronavirus and they reported over 1,000 confirmed cases, and over two dozen fatalities attributed to COVID-19</p>
-                               </div>
+            </video>
+            <div id="overlay">
+              <p>As a live update, COVID-19, previously known as the novel Coronavirus, has killed more than
+                <strong><%= data['deaths'] %></strong> people and infected over 1,805,159 people in 144 countries.
+                (Pettersson et al., 2020) This number is continuing to grow every day. In the United States, the COVID
+                has been spreading rapidly. Currently, all 50 states have declared an emergency over the spread of
+                Coronavirus and they reported over 1,000 confirmed cases, and over two dozen fatalities attributed to
+                COVID-19</p>
+            </div>
 
-                          </div>
-                   </div>
-              </div>
-     	</div>
-</div>
-
-
-   <!-- Footer -->
-<footer class="page-footer font-small blue">
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="index.html" style="text-decoration:none;color:;"> CovidSavior</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- Copyright -->
 
-</footer>
-<!-- Footer -->
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="index.html" style="text-decoration:none;color:;"> CovidSavior</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
 
 
 
 
   <!-- End the Footer Section-->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></        script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"        crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"         crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-          <script>
-  AOS.init();
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-<script src="js/js.js"></script>
-      </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    < /        script> <
+    script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity = "sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin = "anonymous" >
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script src="js/js.js"></script>
+</body>
+
 </html>

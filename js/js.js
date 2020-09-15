@@ -23,3 +23,4 @@ function  hidInfo(){
 	menue.style.display="none";
 	
 	}
+
