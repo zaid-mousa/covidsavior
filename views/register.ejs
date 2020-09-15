@@ -18,18 +18,17 @@
 <style type="text/css">
 	.loginBox
 	{
-		margin-top: 80px;
-		margin-bottom: 80px;
+		
 	}
 	.loginBox button:hover
 	{
-		background-color: #827ffe;
-		border:2px solid #40ff00;
+		
 	}
 	.password
 	{
 		width: 120px !important;
 		display: inline !important;
+		margin: 0 !important;
 
 	}
 </style>
@@ -38,8 +37,8 @@
 
  <%- include('partials/nav'); -%>
  <div class="row">
-	 <div class="col-4"></div>
-	 <div class="col-4"></div>
+	<div class="col-7"></div>
+	
 	<div class="loginBox col-3">
 		<h2 style="color:#403866;">Register</h2>
 		<input type="text" name="id" placeholder="ID" autocomplete="off" required="on" onfocus="this.placeholder=''" onblur="this.placeholder='ID'">
@@ -51,6 +50,7 @@
 		<button>Register</button>
 		<p>LoggedIn? <a href="/login">LogIn</a></p>
 	</div>
+	
 </div>
 
 

@@ -6,17 +6,18 @@ body {
 
 .loginBox{
 	/*
-	width:400px;
+	
 	top: 50%;
 	left: 50%;
-	position: absolute;
+	position: relative;
 	transform: translate(-50%,-50%);
 	
 	
 	*/
+	
 	height: fit-content;
 	color:#000;
-	
+	margin-top: 10% !important;
 	padding-top: 50px;
 	 
 	text-align: center;
@@ -33,6 +34,7 @@ body {
 	text-align: center;
 	border:1px solid #b6b4f9;
 	width:250px;
+	height: 50px;
 	padding:14px 10px;
 	outline: none;
 	color: #403866;
@@ -47,8 +49,7 @@ h2 {
 	font-weight: 15em;
 	text-transform: uppercase;
 	text-align: left;
-	padding-left: 80px;
-	padding-right: 80px;
+	padding: 0 8% 0 8%;
 }
 
 .loginBox button{
@@ -68,8 +69,8 @@ h2 {
 	font-size: 17px;
 }
 .loginBox button:hover{
-	width:110px;
-    padding:17px;
+	
+    /*padding:17px; */
     background-color: #40ff00;
     border:2px solid #40ff00;
 }
@@ -81,16 +82,23 @@ h2 {
 
 .loginBox input[type="text"]:hover,.loginBox input[type="password"]:hover
 {
-	width: 300px;
+	/*
+	width: 300px; 
 	padding:20px;
-	border:1px solid #002db3;
 	font-size: 20px;
+	*/
+	
+	border:1px solid #002db3;
+	
 }
 
 .loginBox input[type="text"]:focus,.loginBox input[type="password"]:focus
 {
+	/* 
 	width: 300px;
 	padding:20px;
+	*/
+	
 	border:1px solid #002db3;
 	font-size: 17px;
 }
