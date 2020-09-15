@@ -1,9 +1,11 @@
-var express = require(express);
+var express = require('express');
+var request = require('request');
 var app = express();
 
 app.set('view engine', 'ejs');
 app.use('/assets', express.static('assets'));
 app.use(express.urlencoded({ extended: false }));
+
 
 app.get("/", function(req, res){
   request('https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats', function(error, response, body){
@@ -21,7 +23,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/about", async function(req, res){
-  res.render('About');
+  res.render('about');
 });
 
 app.get("/demo", function(req, res){
