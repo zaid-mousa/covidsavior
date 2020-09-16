@@ -14,10 +14,13 @@
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
   <title>Demo</title>
   <style>
     * {
       overflow-y: hidden;
+      font-family: 'Ubuntu', sans-serif;
     }
   </style>
 </head>
@@ -41,26 +44,6 @@
     </div>
   </div>
 
-  <div class="phoneSize">
-    <div class="row">
-      <div class="col-sm phoneContainer">
-        <video autoplay loop muted>
-          <source src="assets/img/production ID 4072862.mp4">
-        </video>
-        <div class="textPhone " style="width:60%">
-
-          <h1 style="color: #00336D;">COVIDSAVIOR.</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-          <button class="btn btn-danger n">Demo</button>
-
-        </div>
-        <div class="tip">
-
-        </div>
-      </div>
 
 
 
@@ -69,7 +52,7 @@
   </div>
 
   <div class="row mainTitle" data-aos="fade-up" data-aos-duration="2000">
-    
+
     <div class="mycard1 col-4">
       <h1 style="color: #00336D;">Train your model</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -87,10 +70,10 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
       <button class="btn btn-danger" data-toggle="modal" data-target="#testModal">Predict</button>
     </div>
-    
+
   </div>
 
-  
+
 
   <div class="modal fade" id="trainModal" tabindex="-1" role="dialog" aria-labelledby="trainModalLabel"
     aria-hidden="true">
@@ -101,7 +84,7 @@
           <input type="file">
           <button class = "mx-auto" type="submit">Upload</button>
         </form>
-        
+
       </div>
     </div>
   </div>
@@ -109,7 +92,7 @@
   <div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="trainModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document" style="border-radius: 5px;">
-      
+
       <div class="modal-content mx-auto" style="padding:0;min-width: 100%; display: block; min-height: 50%; overflow-x: hidden;">
         <!--
         <div class="row">
@@ -124,9 +107,9 @@
         </div>
         <div class="col-6">
           <form id = "drag2" action="upload.php" method="POST">
-           
+
             <p>Or predict for a single patient</p>
-            
+
             <button class = "mx-auto" type="submit">Upload</button>
           </form>
         </div>
@@ -202,7 +185,7 @@
   // }
 
   $(document).ready(function(){
-    
+
   $('#drag input').change(function () {
     //alert(1);
     $('#drag p').text(this.files[0].name + " is selected");
