@@ -37,11 +37,7 @@
 
 
         </div>
-
-
-
       </div>
-
     </div>
   </div>
 
@@ -73,39 +69,72 @@
   </div>
 
   <div class="row mainTitle" data-aos="fade-up" data-aos-duration="2000">
-    <div class="col-2"></div>
-    <div class="mycard col-4">
-      <h1 style="color: #00336D;">COVIDSAVIOR.</h1>
+    
+    <div class="mycard1 col-4">
+      <h1 style="color: #00336D;">Train your model</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-      <button class="btn btn-danger">Demo</button>
+      <button class="btn btn-danger" data-toggle="modal" data-target="#trainModal">Train model</button>
     </div>
 
-    <div class="mycard col-4">
-      <h1 style="color: #00336D;">COVIDSAVIOR.</h1>
+    <div class="mycard2 col-4">
+      <h1 style="color: #00336D;">Predict results</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-      <button class="btn btn-danger">Demo</button>
+      <button class="btn btn-danger" data-toggle="modal" data-target="#testModal">Predict</button>
     </div>
-    <div class="col-2"></div>
+    
   </div>
 
-  <div class="container text-center statisticsSection">
-    <div style="color: #00336D;font-size: 2.5rem;">Coronavirus Statistics</div>
-    <div class="row">
+  
 
-      <div class="col-md-12 col-sm-12" class="outterFram">
-        <!-- <iframe class="fram"src="https://www.worldometers.info/coronavirus/" width="100%"  title="Iframe Example"></iframe>
- -->
+  <div class="modal fade" id="trainModal" tabindex="-1" role="dialog" aria-labelledby="trainModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content mx-auto" style="padding:0;max-width: 100%; display: block; min-height: 50%">
+        <form id = "drag" action="upload.php" method="POST" style="padding: 15px;">
+          <p>Drag your files here or click in this area.</p>
+          <input type="file">
+          <button class = "mx-auto" type="submit">Upload</button>
+        </form>
+        
       </div>
-
-
     </div>
-  </div> -->
+  </div>
+
+  <div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="trainModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document" style="border-radius: 5px;">
+      
+      <div class="modal-content mx-auto" style="padding:0;min-width: 100%; display: block; min-height: 50%; overflow-x: hidden;">
+        <!--
+        <div class="row">
+        <div class="col-6" style="border-right: 1px solid gray;">
+          -->
+          <form id = "drag2" action="upload.php" method="POST">
+            <p>Drag your files here or click in this area.</p>
+            <input type="file">
+            <button class = "mx-auto" type="submit">Upload</button>
+          </form>
+          <!--
+        </div>
+        <div class="col-6">
+          <form id = "drag2" action="upload.php" method="POST">
+           
+            <p>Or predict for a single patient</p>
+            
+            <button class = "mx-auto" type="submit">Upload</button>
+          </form>
+        </div>
+      -->
+      </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -119,8 +148,8 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    < /        script> <
-    script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    </script>
+    <script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity = "sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin = "anonymous" >
   </script>
@@ -171,6 +200,15 @@
   //     $("#navigation").css("background-color","rgba(16, 22, 54, 0.2)");
   //     $("#logo").css("color", "transparent");
   // }
+
+  $(document).ready(function(){
+    
+  $('#drag input').change(function () {
+    //alert(1);
+    $('#drag p').text(this.files[0].name + " is selected");
+    //alert(2);
+  });
+});
 </script>
 
 </html>
