@@ -1,5 +1,6 @@
 /@charset "utf-8";
 /* CSS Document */
+
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -74,7 +75,7 @@ body {
 }
 
 a.navbar-brand {
-	color: #0066CF;
+	color: #3b5cce;
 }
 
 a.navbar-brand .white {
@@ -186,7 +187,7 @@ a.navbar-brand:hover .white {
 	font-size: 20px;
 	*/
 
-	border: 1px solid #002db3;
+	border: 1px solid #3b5cce;
 
 }
 
@@ -197,7 +198,7 @@ a.navbar-brand:hover .white {
 	padding:20px;
 	*/
 
-	border: 1px solid #002db3;
+	border: 1px solid #3b5cce;
 	font-size: 17px;
 }
 
@@ -207,8 +208,7 @@ a.navbar-brand:hover .white {
 	position: absolute;
 	top: -10px;
 	height: auto;
-	z-index: 2;
-	background-color: #000 !important;
+	
 }
 
 .overlay {
@@ -228,8 +228,9 @@ a.navbar-brand:hover .white {
 .mainTitle {
 	text-align: center;
 	z-index: 4;
-	position: absolute;
-	top: 50%;
+	margin-top: 30%;
+	background-color: rgba(205, 200, 200, 0.5);
+	padding: 20px;
 }
 
 .mainTitle .mycard1 {
@@ -242,6 +243,33 @@ a.navbar-brand:hover .white {
 }
 
 .mainTitle .mycard2 {
+	padding: 15px;
+	border-radius: 5px;
+	margin: 20px auto 0 10px;
+	background: #fff;
+	z-index: 4;
+	opacity: 90%;
+}
+
+
+.mainTitleDemo {
+	text-align: center;
+	z-index: 4;
+	margin-top: 30%;
+	background-color: transparent;
+	padding: 20px;
+}
+
+.mainTitleDemo .mycard1 {
+	padding: 15px;
+	border-radius: 5px;
+	margin: 20px 10px 0 auto;
+	background: #fff;
+	z-index: 4;
+	opacity: 90%;
+}
+
+.mainTitleDemo .mycard2 {
 	padding: 15px;
 	border-radius: 5px;
 	margin: 20px auto 0 10px;
@@ -764,9 +792,13 @@ a.navbar-brand:hover .white {
 	color: #7FCCFF;
 	font-size: 23px;
 }
+<<<<<<< HEAD
+
+=======
 .outterDiv{
 	background-color: rgba(205, 200, 200, 0.5);:
 }
+>>>>>>> de5a0e979123bbadbc6ad1a9d4f90d437a14513f
  /* Results */
 .testcontainer
 {
