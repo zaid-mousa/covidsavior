@@ -8,15 +8,15 @@ body {
 
 .loginBox{
 	/*
-	
+
 	top: 50%;
 	left: 50%;
 	position: relative;
 	transform: translate(-50%,-50%);
-	
-	
+
+
 	*/
-	
+
 	height: fit-content;
 	color:#000;
 	margin-top: 10% !important;
@@ -43,10 +43,10 @@ body {
 	color: #403866;
 	border-radius: 18px;
 	background-color:transparent;
-	transition: 0.4s; 
+	transition: 0.4s;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 17px;
-}	
+}
 h3 {
 	font-size:100%;
 	font-weight: 15em;
@@ -72,7 +72,7 @@ h3 {
 	font-size: 17px;
 }
 .loginBox button:hover{
-	
+
     /*padding:17px; */
     background-color: #40ff00;
     border:2px solid #40ff00;
@@ -86,22 +86,22 @@ h3 {
 .loginBox input[type="text"]:hover,.loginBox input[type="password"]:hover
 {
 	/*
-	width: 300px; 
+	width: 300px;
 	padding:20px;
 	font-size: 20px;
 	*/
-	
+
 	border:1px solid #002db3;
-	
+
 }
 
 .loginBox input[type="text"]:focus,.loginBox input[type="password"]:focus
 {
-	/* 
+	/*
 	width: 300px;
 	padding:20px;
 	*/
-	
+
 	border:1px solid #002db3;
 	font-size: 17px;
 }
@@ -114,5 +114,3 @@ p {
 p a {
 	text-decoration: none;
 }
-
-
