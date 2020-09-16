@@ -26,7 +26,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 /*Navbar Styles*/
@@ -821,4 +821,11 @@ a.navbar-brand:hover .white {
 	border-color: #132f8e !important;
 	*/
 	box-shadow: 0 0 0 0.2rem rgb(127 204 255 / 77%);
+}
+
+#drag button {
+    color: #fff;
+    background: #132F8E;
+    border-bottom: 4px solid #136296;
+		padding:6px 12px;
 }

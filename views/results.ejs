@@ -14,16 +14,28 @@
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
   <title>Demo</title>
   <style>
     * {
-      
+      font-family: 'Ubuntu', sans-serif;
     }
     body
     {
       background: url(/assets/img/register.jpg);
       background-repeat: no-repeat;
       background-attachment: fixed;
+    }
+
+    .btn,.btn:hover,.btn:focus{
+      background-color: #e50914;
+      color: #fff;
+      border-radius: 20px;
+    }
+    .btn:focus{
+      box-shadow: none;
+      color:black;
     }
   </style>
 </head>
@@ -48,6 +60,8 @@
           <th scope="col">CRP</th>
           <th scope="col">Lymph(%)</th>
           <th scope="col">Outcome</th>
+          <th scope="col">Email</th>
+          <th scope="col">Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -56,8 +70,13 @@
           <td>Mark</td>
           <td>Otto</td>
           <td>@mdo</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><button class="btn"><i class="fa fa-times" aria-hidden="true"></i>
+</button></td>
         </tr>
-        
+
       </tbody>
     </table>
   </div>
@@ -76,16 +95,25 @@
           <th scope="col">CRP</th>
           <th scope="col">Lymph(%)</th>
           <th scope="col">Outcome</th>
+          <th scope="col">Email</th>
+          <th scope="col">Delete</th>
         </tr>
       </thead>
       <tbody>
+
         <tr>
+
           <th scope="row">1</th>
+
           <td>Mark</td>
           <td>Otto</td>
           <td>@mdo</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><button class="btn"><i class="fa fa-times" aria-hidden="true"></button></i></td>
         </tr>
-        
+
       </tbody>
     </table>
   </div>
@@ -127,9 +155,9 @@
         </div>
         <div class="col-6">
           <form id = "drag2" action="upload.php" method="POST">
-           
+
             <p>Or predict for a single patient</p>
-            
+
             <button class = "mx-auto" type="submit">Upload</button>
           </form>
         </div>
