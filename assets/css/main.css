@@ -167,8 +167,7 @@ a.navbar-brand:hover .white {
 .modal-content button:hover {
 
 	/*padding:17px; */
-	background-color: #40ff00;
-	border: 2px solid #40ff00;
+	background-color: #7FCCFF;
 }
 
 .modal-content button:focus {
@@ -180,7 +179,7 @@ a.navbar-brand:hover .white {
 .modal-content input[type="text"]:hover,
 .modal-content input[type="password"]:hover {
 	/*
-	width: 300px; 
+	width: 300px;
 	padding:20px;
 	font-size: 20px;
 	*/
@@ -191,7 +190,7 @@ a.navbar-brand:hover .white {
 
 .modal-content input[type="text"]:focus,
 .modal-content input[type="password"]:focus {
-	/* 
+	/*
 	width: 300px;
 	padding:20px;
 	*/
@@ -212,7 +211,7 @@ a.navbar-brand:hover .white {
 
 .overlay {
 	position: fixed;
-	
+
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -640,6 +639,9 @@ footer ul li {
 @media (max-width: 993px) {}
 
 a.navbar-brand:hover .white {
-	color: #000;
+	color: #7FCCFF;
 	font-size: 23px;
+}
+.outterDiv{
+	background-color: rgba(205, 200, 200, 0.5);: 
 }
