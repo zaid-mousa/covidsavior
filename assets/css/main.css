@@ -22,7 +22,7 @@ html {
 
 body {
 
-	height:100%;	
+	height:100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -299,17 +299,14 @@ a.navbar-brand:hover .white {
 	outline: none;
 }
 
-#drag button:hover {
-	background: #149174;
-	color: #0C5645;
-}
+
 
 #drag button:active {
 	border: 0;
 }
 
 #drag2 {
-	
+
 	padding: 15px;
 	height: fit-content;
 	border: 4px dashed #fff;
@@ -351,10 +348,7 @@ a.navbar-brand:hover .white {
 	outline: none;
 }
 
-#drag2 button:hover {
-	background: #149174;
-	color: #0C5645;
-}
+
 
 #drag2 button:active {
 	border: 0;
@@ -398,7 +392,7 @@ a.navbar-brand:hover .white {
 }
 
 .ImgContainer {
-	
+
 }
 
 #overlay {
@@ -771,7 +765,7 @@ a.navbar-brand:hover .white {
 	font-size: 23px;
 }
 .outterDiv{
-	background-color: rgba(205, 200, 200, 0.5);: 
+	background-color: rgba(205, 200, 200, 0.5);:
 }
  /* Results */
 .testcontainer
@@ -802,4 +796,29 @@ a.navbar-brand:hover .white {
 .traincontainer h1
 {
 	margin: 0 20px;
+}
+
+#drag button {
+    color: #fff;
+    background: #0066CF;
+    border-bottom: 4px solid #136296;
+}
+#drag2 button {
+    color: #fff;
+    background: #0066CF;
+    border-bottom: 4px solid #136296;
+}
+
+
+.btn-danger,.btn-danger:hover {
+    color: #fff !important;
+    background-color: #132f8e !important;
+    border-color: #132f8e !important;
+}
+.btn-danger:focus{
+/*
+	background-color: #7FCCFF !important;
+	border-color: #132f8e !important;
+	*/
+	box-shadow: 0 0 0 0.2rem rgb(127 204 255 / 77%);
 }
