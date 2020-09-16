@@ -20,14 +20,12 @@
 <body>
 
   <%- include('partials/nav'); -%>
-<div style="display:block;">
-
 
   <div class="videoSection">
     <div class="container-fluid">
       <div class="row">
-
-          <div class="videoContainer w-100">
+        
+          <div class="videoContainer">
             <video width="100%" height="100%" autoplay muted loop>
               <source src="assets/img/Background-35208.mp4" type="video/mp4">
             </video>
@@ -44,12 +42,11 @@
 
           </div>
 
-
+        
 
       </div>
 
     </div>
-  </div>
   </div>
 
   <div class="phoneSize">
@@ -72,9 +69,7 @@
 
         </div>
       </div>
-<div >
 
-</div>
 
 
 
@@ -95,14 +90,22 @@
     </div>
   </div> -->
 
-
-  <div class="imgSection" >
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="imgSection" style="margin-top:80px">
     <div class="container-fluid text-center ">
       <div class="row">
         <div class=" col-sm-12">
           <div class="ImgContainer">
             <video width="100%" height="100%" autoplay muted loop>
-              <source src="assets/img/Background-35208.mp4" type="video/mp4">
+              <source src="assets\images\Background-35208.mp4" type="video/mp4">
 
             </video>
             <div id="overlay">
@@ -164,7 +167,6 @@
     if ($(window).scrollTop() > 250) {
       $(".navbar").css("background-color", "#08377A");
       $("#logo").css("color", "white");
-
     } else {
       $(".navbar").css("background-color", "transparent");
       $("#logo").css("color", "transparent");
@@ -177,16 +179,12 @@
         $("#logo").css("color", "transparent");
       }
     }
-
   });
-
   $('.navbar-toggle').on('click', function () {
     $(".navbar").css("background-color", "#08377A");
     $("#logo").css("color", "white");
   });
-
   // {
-
   // }
   // else
   // {

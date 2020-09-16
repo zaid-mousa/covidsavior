@@ -398,7 +398,7 @@ a.navbar-brand:hover .white {
 }
 
 .ImgContainer {
-	position: relative;
+	
 }
 
 #overlay {
@@ -420,6 +420,11 @@ a.navbar-brand:hover .white {
 .ImgContainer:hover #overlay{
 
 background: rgba(255,255,255,.3);}*/
+.imgSection
+{
+	background: url(/assets/img/background.png) no-repeat 0% 100%;
+	background-size: 50%;
+}
 .ImgContainer #overlay p {
 	display: block;
 	position: absolute;
