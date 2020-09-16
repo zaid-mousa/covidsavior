@@ -17,7 +17,13 @@
   <title>Demo</title>
   <style>
     * {
-      overflow-y: hidden;
+      
+    }
+    body
+    {
+      background: url(/assets/img/register.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
   </style>
 </head>
@@ -29,16 +35,19 @@
 
 
 
-  <div class="container mycontainer">
-
-
+  <div class="container testcontainer">
+    <br>
+    <h1>Prediction results</h1>
+    <br>
     <table class="table">
-      <thead>
+      <thead class="thead-dark">
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
+          <th scope="col">Patient ID</th>
+          <th scope="col">Age</th>
+          <th scope="col">LDH</th>
+          <th scope="col">CRP</th>
+          <th scope="col">Lymph(%)</th>
+          <th scope="col">Outcome</th>
         </tr>
       </thead>
       <tbody>
@@ -48,18 +57,35 @@
           <td>Otto</td>
           <td>@mdo</td>
         </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="container traincontainer">
+    <br>
+    <h1>Training results</h1>
+    <br>
+    <table class="table">
+      <thead class="thead-dark">
         <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
+          <th scope="col">Patient ID</th>
+          <th scope="col">Age</th>
+          <th scope="col">LDH</th>
+          <th scope="col">CRP</th>
+          <th scope="col">Lymph(%)</th>
+          <th scope="col">Outcome</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
         </tr>
+        
       </tbody>
     </table>
   </div>

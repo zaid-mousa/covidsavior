@@ -37,6 +37,7 @@ body {
 .navbar {
 	background: transparent;
 	margin-top: 0;
+	transition: background-color 0.5s;
 }
 
 .navbar .navbar-nav {
@@ -768,10 +769,32 @@ a.navbar-brand:hover .white {
 	background-color: rgba(205, 200, 200, 0.5);: 
 }
  /* Results */
-.mycontainer
+.testcontainer
 {
 	margin: 30% auto;
 	height: fit-content;
 	min-width: 80%;
-	background-color: gray;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 0;
+}
+
+.testcontainer h1
+{
+	margin: 0 20px;
+}
+
+.traincontainer
+{
+	margin: 30% auto;
+	height: fit-content;
+	min-width: 80%;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 0;
+}
+
+.traincontainer h1
+{
+	margin: 0 20px;
 }
