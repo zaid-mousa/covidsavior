@@ -13,17 +13,52 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>About</title>
   </head>
+  <style media="screen">
+    .header{
+      font-family: times, Times New Roman, times-roman, georgia, serif;
+ color: #444;
+ margin: 0;
+ padding: 0px 0px 6px 0px;
+ font-size: 51px;
+ line-height: 44px;
+ letter-spacing: -2px;
+ display: block;
+ font-weight: bold;
+    }
+    .paragraph{
+      line-height: 30px;
+    }
+
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+  background-color: #444;
+  width:40%;
+}
+  </style>
   <body>
     <%- include('partials/nav'); -%>
-<div class="About text-center" style="margin-top:10%" >
+<div class="About text-center" style="margin-top:7%" >
 	<div class="container-fluid">
     	<div calss="row">
-        	<h1 class="animate__animated animate__heartBeat animate__infinite 	infinite"><span style="font-size:48px;color:#F90">A</span>bout</h1>
+        	<h1><span style="font-size:48px;color:#7FCCFF">A</span>bout</h1>
+          <br>
+<hr class="style1">
+<br>
             <div class="container">
   <div class="row">
-    <div class="col-sm text-left">
-      Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment. Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness. The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.
-    </div>
+    <div class="col-sm text-left paragraph">
+      <span class="header">Abstract</span>
+COVID-19 represents a challenge to healthcare services around the world. Up until today, this pandemic has killed more than 800,000 individuals [1], and the cases are continuously increasing. Many healthcare facilities have limited health workers and shortage of resources like beds, ventilators and even face masks, and doctors are put in situations where they’d have to prioritize patients, which causes a dilemma in clinical decision making [2]. Studies have shown that patients at high risk of mortality have biomarkers that can predict their mortality, which can help us prioritize them in Intensive Care Units (ICU) to save their lives [3].
+
+<span class="header">Goals</span>
+1.	Implement a machine learning model to predict the mortality and severity of patients according to biomarkers from their blood tests.<br>
+2.	Stratify patients based on their need to be placed in the ICU and under maximum medical care to prevent their death.
+<span class="header">Specifications</span>
+The model can be built to provide a decision making tree, and it can work out the most significant predictive factors for mortality of COVID-19 patients. We will also consider building an accessible user-friendly website for health workers to use. All they have to do is to upload an excel sheet containing lab tests of patients, and the program will immediately point their attention to patients at higher risk and need extra medical care.
+
+
+
+</div>
     <div class=" IMGS col-sm text-left">
         <img id="i1"  data-aos="fade-left" src="assets/img/119089923_240208050660428_459045412340830304_n.jpg" width="270" height="500px">
     	<img  id="i2" data-aos="fade-right" src="assets/img/119071378_372274450594397_4317364987578737230_n.jpg" width="240px" height="246px" style="vertical-align:top">

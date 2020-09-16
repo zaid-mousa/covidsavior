@@ -1,7 +1,7 @@
 <!--Start the Navbar Section-->
 <nav class="navbar navbar-expand-sm fixed-top ">
   <a class="navbar-brand" href="/"><img style="display:inline;width:30px;" src="/assets/img/Logo.png"><span
-      class="white"> COVID</span>Savior</a></a>
+      class="white"> COVID</span>Savior</a>
   <button class="navbar-toggler" onClick="viewSearch()" type="button" data-toggle="collapse"
     data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
     aria-label="Toggle navigation">
@@ -13,11 +13,11 @@
         <a class="nav-link " href="/"><i class="fa fa-home" aria-hidden="true"></i>Home <span
             class="sr-only">(current)</span></a>
       </li>
-      
+
       <li class="nav-item">
         <a class="nav-link" href="/about"><i class="fa fa-book" aria-hidden="true"></i>About</a></li>
-      <li><a class="nav-link" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-heartbeat" aria-hidden="true"></i></i>Demo</a></li>
-            
+      <li><a class="nav-link" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-heartbeat" aria-hidden="true"></i><span style="cursor:pointer;">Demo</span></a></li>
+
 
 
     </ul>
@@ -30,7 +30,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content mx-auto">
 
-      <h3>Login</h3>
+      <h3 style="text-align:center;">Login</h3>
       <input class="bomb" type="text" name="ID" placeholder="Doctor ID" autocomplete="off">
       <input type="password" name="password" placeholder="Password">
       <button>LOGIN</button>
@@ -69,7 +69,7 @@
     crossorigin="anonymous"></script>
   <!-- <script type="text/javascript" src="/js/js.js"></script> -->
   <script type="text/javascript">
-	
+
     $('#exampleModal').on('shown.bs.modal', function ()
     {
       alert("success");

@@ -17,11 +17,12 @@
 
 html {
 	overflow-x: hidden;
+	height:100%;
 }
 
 body {
 
-
+	height:100%;	
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -167,8 +168,7 @@ a.navbar-brand:hover .white {
 .modal-content button:hover {
 
 	/*padding:17px; */
-	background-color: #40ff00;
-	border: 2px solid #40ff00;
+	background-color: #7FCCFF;
 }
 
 .modal-content button:focus {
@@ -180,7 +180,7 @@ a.navbar-brand:hover .white {
 .modal-content input[type="text"]:hover,
 .modal-content input[type="password"]:hover {
 	/*
-	width: 300px; 
+	width: 300px;
 	padding:20px;
 	font-size: 20px;
 	*/
@@ -191,7 +191,7 @@ a.navbar-brand:hover .white {
 
 .modal-content input[type="text"]:focus,
 .modal-content input[type="password"]:focus {
-	/* 
+	/*
 	width: 300px;
 	padding:20px;
 	*/
@@ -761,6 +761,17 @@ footer ul li {
 @media (max-width: 993px) {}
 
 a.navbar-brand:hover .white {
-	color: #000;
+	color: #7FCCFF;
 	font-size: 23px;
+}
+.outterDiv{
+	background-color: rgba(205, 200, 200, 0.5);: 
+}
+ /* Results */
+.mycontainer
+{
+	margin: 30% auto;
+	height: fit-content;
+	min-width: 80%;
+	background-color: gray;
 }
