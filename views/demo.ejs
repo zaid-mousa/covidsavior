@@ -14,26 +14,31 @@
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>Home</title>
+  <title>Demo</title>
+  <style>
+    * {
+      overflow-y: hidden;
+    }
+  </style>
 </head>
 
 <body>
 
   <%- include('partials/nav'); -%>
-
-  <div class="videoSection">
+  <div class="overlay"></div>
+  <div class="videoSection" style="background-color: #00336D;z-index: 2;">
     <div class="container-fluid">
       <div class="row">
-        
-          <div class="videoContainer">
-            <video width="100%" height="100%" autoplay muted loop>
-              <source src="assets/img/production ID 4072862.mp4" type="video/mp4">
-            </video>
-            
+        <div class="videoContainer">
 
-          </div>
+          <video width="120%" height="120%" autoplay muted loop>
+            <source src="assets/img/production ID 4072862.mp4" type="video/mp4">
+          </video>
 
-        
+
+        </div>
+
+
 
       </div>
 
@@ -68,7 +73,8 @@
   </div>
 
   <div class="row mainTitle" data-aos="fade-up" data-aos-duration="2000">
-    <div class="col-6">
+    <div class="col-2"></div>
+    <div class="mycard col-4">
       <h1 style="color: #00336D;">COVIDSAVIOR.</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -76,6 +82,16 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
       <button class="btn btn-danger">Demo</button>
     </div>
+
+    <div class="mycard col-4">
+      <h1 style="color: #00336D;">COVIDSAVIOR.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+      <button class="btn btn-danger">Demo</button>
+    </div>
+    <div class="col-2"></div>
   </div>
 
   <div class="container text-center statisticsSection">
@@ -91,20 +107,9 @@
     </div>
   </div> -->
 
-  
 
 
-  <!-- Footer -->
-  <footer class="page-footer font-small blue">
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="index.html" style="text-decoration:none;color:;"> CovidSavior</a>
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
 
 
 
